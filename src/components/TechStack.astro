@@ -1,0 +1,93 @@
+---
+import SocialPill from "@/components/SocialPill.astro";
+import JavaScript from "@/components/icons/JavaScript.astro";
+import Node from "@/components/icons/Node.astro";
+---
+
+<section class="text-white">
+    <div class="mx-auto max-w-screen-xl py-4 sm:px-6 sm:py-4 lg:px-8 lg:py-4">
+        <div class="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-4">
+            <SocialPill
+                class="tech-icons block rounded-xl border border-gray-800 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            >
+                <JavaScript
+                    class="tech-icon-images p-3 size-32 inline-block text-gray-400"
+                />
+            </SocialPill>
+
+            <SocialPill
+                class="tech-icons block rounded-xl border border-gray-800 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            >
+                <Node
+                    class="tech-icon-images p-3 size-32 inline-block text-gray-400"
+                />
+            </SocialPill>
+
+            <SocialPill
+                class="tech-icons block rounded-xl border border-gray-800 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            >
+                <JavaScript
+                    class="tech-icon-images p-3 size-32 inline-block text-gray-400"
+                />
+            </SocialPill>
+
+            <SocialPill
+                class="tech-icons block rounded-xl border border-gray-800 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            >
+                <Node
+                    class="tech-icon-images p-3 size-32 inline-block text-gray-400"
+                />
+            </SocialPill>
+
+            <SocialPill
+                class="tech-icons block rounded-xl border border-gray-800 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            >
+                <JavaScript
+                    class="tech-icon-images p-3 size-32 inline-block text-gray-400"
+                />
+            </SocialPill>
+
+            <SocialPill
+                class="tech-icons block rounded-xl border border-gray-800 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"
+            >
+                <Node
+                    class="tech-icon-images p-3 size-32 inline-block text-gray-400"
+                />
+            </SocialPill>
+        </div>
+    </div>
+</section>
+
+<style>
+    .tech-icons {
+        border: 1.7px solid rgba(67, 46, 78, 0.637) !important;
+        border-radius: 5px !important;
+        box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+        display: table !important;
+        font-size: 4.5em !important;
+        margin: 10px !important;
+        opacity: 0.93 !important;
+        overflow: hidden !important;
+        text-align: center !important;
+        transition: all 0.4s ease 0s !important;
+        vertical-align: middle !important;
+    }
+
+    @media (max-width: 767px) {
+        .tech-icons {
+            margin: 10px !important;
+        }
+    }
+
+    .tech-icons:hover {
+        border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+        overflow: hidden !important;
+        -webkit-transform: scale(1.05) !important;
+        transform: scale(1.05) !important;
+        background: rgba(171, 117, 193, 0.883) !important;
+    }
+
+    .tech-icon-images:hover {
+        color: aliceblue;
+    }
+</style>
