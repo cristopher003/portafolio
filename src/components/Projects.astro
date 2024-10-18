@@ -1,39 +1,46 @@
 ---
 import GitHub from "./icons/tech/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
+import Angular  from "./icons/tech/Angular.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import TypeScript from "./icons/tech/TypeScript.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-red-500 text-white",
+    icon: Angular,
   },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class: "bg-[#003159] text-white",
+    icon: TypeScript,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Cortes-App - Sistema de gestión de cortes de energía eléctrica",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Es un proyecto independiente que permite a los usuarios visualizar los horarios de cortes de energía consumindo la api de CNEL y mostrando los cortes de una manera mas amigable ",
+    link: "https://cortes-app.vercel.app/",
+    github: "https://github.com/cristopher003/cortes-app",
+    image: "/projects/cortes.png",
+    tags: [TAGS.ANGULAR, TAGS.TAILWIND],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Country App - Información de países",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Es un proyecto que permite a los usuarios visualizar información de los países consumiendo la api de restcountries y mostrando los datos de una manera mas amigable con diferenes filtros y totalmente responsive",
+    link: "https://country-app-lyart.vercel.app/",
+    github: "https://github.com/cristopher003/country-app",
+    image: "projects/paises.png",
+    tags: [TAGS.ANGULAR, TAGS.TYPESCRIPT],
   },
 ]
 ---
@@ -69,7 +76,7 @@ const PROJECTS = [
       <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
       <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (
-            <LinkButton href={github}>
+            <LinkButton href={github} >
               <GitHub class="size-6" />
               Code
               
